@@ -16,4 +16,7 @@ This will print out all of the glyphs contained in the font **CaskaydiaCoveNerdF
 
 `./fontcharlist.sh /usr/local/share/fonts/ttf/CaskaydiaCoveNerdFont-Regular.ttf`
 
+## Example
 
+![Alt Command exacution of the script](./images/command-execution.png)
+![Alt Font icons showing](./images/icons-example.png)
