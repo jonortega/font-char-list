@@ -1,11 +1,26 @@
 #!/bin/bash -
 
-Usage() { echo "$0 FontFile"; exit 1; }
+Usage() { echo "$0 [-w width] FontFile"; exit 1; }
 SayError() { local error=$1; shift; echo "$0: $@"; exit "$error"; }
 
-[ "$#" -ne 1 ] && Usage
+# Parse arguments
+while getopts ":w:" opt; do
+  case ${opt} in
+    w )
+      width=$OPTARG
+      ;;
+    \? )
+      Usage
+      ;;
+  esac
+done
+shift $((OPTIND -1))
 
-width=77
+# Set width (default = 77)
+width=${width:-77}
+
+# Check if there is a file
+[ "$#" -eq 2 ] && Usage
 fontfile="$1"
 
 [ -f "$fontfile" ] || SayError 4 'File not found'
