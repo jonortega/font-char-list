@@ -6,9 +6,9 @@ Bash script to print out every valid character contained in a font.
 
 This script is based on a [petrosAth/scripts](https://github.com/petrosAth/scripts/blob/master/fontcharlist.sh) script.
 
-I was looking for a way to check the UTF values for some NerdFont icons, because the ones showing on their webpage weren't working. I came across [this](https://unix.stackexchange.com/questions/595756/how-to-list-all-supported-glyphs-of-a-given-font) page where someone posted the code for the script. It mentioned the name, so i looked it up and i found his GitHub repo.
+I was looking for a way to check the UTF values for some NerdFont icons, because the ones showing on their webpage weren't working. I came across [this](https://unix.stackexchange.com/questions/595756/how-to-list-all-supported-glyphs-of-a-given-font) page where someone posted the code for the script. It mentioned the name, so I looked it up and I found his GitHub repo.
 
-I just tweaked the script a little so it worked exactly as I wanted it. I'm uploading it here so I can always go back to it and just in case someone finds it and can have a better explanation of how and for what it works.
+I just tweaked the script a little so it worked exactly as I wanted. I'm uploading it here so I can always go back to it. Also just in case someone finds it and can have a better explanation for what it does and how works.
 
 ## Usage
 
@@ -21,7 +21,7 @@ Or use grep to filter the one you want: `fc-list | grep Caskaydia`
 
 ## Example
 
-`./fontcharlist.sh /usr/local/share/fonts/ttf/CaskaydiaCoveNerdFont-Regular.ttf`
+`./fontcharlist.sh -w 81 /usr/local/share/fonts/ttf/CaskaydiaCoveNerdFont-Regular.ttf`
 
 <p align="center">
   <img src="./images/command-execution.png" alt="Command exacution of the script" width="600"/>
