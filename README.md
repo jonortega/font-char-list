@@ -21,6 +21,6 @@ Or use grep to filter the one you want: `fc-list | grep Caskaydia`
 
 ## Example
 
-<img src="./images/command-execution.png" alt="Command exacution of the script" width="200"/>
-<img src=./images/icons-example.png" alt="Font icons showing" width="200"/>
+<img src="./images/command-execution.png" alt="Command exacution of the script" width="800"/>
+<img src="./images/icons-example.png" alt="Font icons showing" width="800"/>
 
