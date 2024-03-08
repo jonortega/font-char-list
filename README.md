@@ -16,7 +16,11 @@ This will print out all of the glyphs contained in the font **CaskaydiaCoveNerdF
 
 `./fontcharlist.sh /usr/local/share/fonts/ttf/CaskaydiaCoveNerdFont-Regular.ttf`
 
+You can look up the path+name to your fonts using the following command: `fc-list`
+Or use grep to filter the one you want: `fc-list | grep Caskaydia`
+
 ## Example
 
-![Alt Command exacution of the script](./images/command-execution.png)
-![Alt Font icons showing](./images/icons-example.png)
+<img src="./images/command-execution.png" alt="Command exacution of the script" width="200"/>
+<img src=./images/icons-example.png" alt="Font icons showing" width="200"/>
+
