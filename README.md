@@ -12,14 +12,14 @@ I just tweaked the script a little so it worked exactly as I wanted. I'm uploadi
 
 ## Usage
 
-This will print out all of the glyphs contained in the font **CaskaydiaCoveNerdFont-Regular.tty**:
-
 `./fontcharlist.sh [-w width] /path/to/fileName.ttf`
 
 You can look up the path+name to your fonts using the following command: `fc-list`  
 Or use grep to filter the one you want: `fc-list | grep Caskaydia`
 
 ## Example
+
+This will print out all of the glyphs contained in the font **CaskaydiaCoveNerdFont-Regular.tty**:
 
 `./fontcharlist.sh -w 81 /usr/local/share/fonts/ttf/CaskaydiaCoveNerdFont-Regular.ttf`
 
